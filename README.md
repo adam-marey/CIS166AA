@@ -1,3 +1,2 @@
 # CIS166AA
-Fall electives - AAS
-Practice Labs
+Fall electives - AAS - Practice Labs
