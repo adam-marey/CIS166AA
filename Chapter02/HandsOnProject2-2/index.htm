@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <!--
+  <head>
+    <!--
       JavaScript 6th Edition
       Chapter 2
       Hands-on Project 2-2
 
-      Author: 
-      Date:   
+      Author: Sulaiman Marey
+      Date:   Sep/18/2022
 
       Filename: index.htm
    -->
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-   <title>Hands-on Project 2-2</title>
-   <link rel="stylesheet" href="styles.css" />
-   <script src="modernizr.custom.05819.js"></script>
-</head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Hands-on Project 2-2</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="modernizr.custom.05819.js"></script>
+  </head>
 
-<body>
-   <header>
-      <h1>
-         Hands-on Project 2-2
-      </h1>
-   </header>
+  <body>
+    <header>
+      <h1>Hands-on Project 2-2</h1>
+    </header>
 
-   <article>
+    <article>
       <h2>Contact Information</h2>
       <form>
         <fieldset id="contactinfo">
@@ -45,7 +43,19 @@
         <fieldset id="submitbutton">
           <input type="button" id="submit" value="Submit" />
         </fieldset>
-     </form>
-   </article>
-</body>
+      </form>
+    </article>
+    <script>
+      function submitInfo() {
+        var name = document.getElementById('nameinput');
+        var email = document.getElementById('emailinput');
+        var phone = document.getElementById('phoneinput');
+        name.value && email.value && phone.value
+          ? alert('Thank you!')
+          : alert('Please fill in all fields');
+      }
+      document.getElementById('submit');
+      addEventListener('click', submitInfo, false);
+    </script>
+  </body>
 </html>
